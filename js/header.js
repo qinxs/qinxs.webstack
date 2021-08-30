@@ -3,8 +3,8 @@ function search() {
     var listIndex = -1;
     var hotList = 0;
     var searchData = {
-        "thisSearch": "https://www.baidu.com/s?wd=",
-        "thisSearchIcon": "url('/images/search_icon.png')",
+        "thisSearch": "https://cn.bing.com/search?q=",
+        "thisSearchIcon": "0px -40px",
         "hotStatus": true,
         "data": [{
             name: "百度",
