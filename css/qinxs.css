@@ -378,10 +378,10 @@ body.night .search-engine-list li {
 }
 
 .go-up{
-  right: 10px !important;
   position: fixed !important;
-  bottom: 20px !important;
-  height: 12px;
+  margin-bottom: 0 !important;
+  right: 12px !important;
+  bottom: 12px !important;
 }
 
 body.night .go-up a {
@@ -417,4 +417,13 @@ footer.main-footer {
 }
 .footer-inner p {
   margin: 0;
+}
+footer.main-footer .go-up a {
+  padding: 4px 8px !important;
+  border-radius: 15% !important;
+  background: #fff !important;
+  box-shadow: 0 1px 3px rgba(18,18,18,.1);
+}
+footer.main-footer .go-up a:hover {
+  background: #d3d3d3 !important;
 }
