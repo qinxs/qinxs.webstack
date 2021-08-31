@@ -421,9 +421,9 @@ footer.main-footer {
 footer.main-footer .go-up a {
   padding: 4px 8px !important;
   border-radius: 15% !important;
-  background: #fff !important;
+  background: rgba(44,46,47,.05) !important;
   box-shadow: 0 1px 3px rgba(18,18,18,.1);
 }
 footer.main-footer .go-up a:hover {
-  background: #d3d3d3 !important;
+  background: #ccc !important;
 }
