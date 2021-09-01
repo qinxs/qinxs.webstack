@@ -379,19 +379,30 @@ body.night .search-engine-list li {
 
 .go-up{
   position: fixed !important;
-  margin-bottom: 0 !important;
   right: 12px !important;
   bottom: 12px !important;
+  margin-bottom: 0 !important;
+  padding: 4px 8px !important;
+  border-radius: 15% !important;
+  background: rgba(44,46,47,.05) !important;
+  box-shadow: 0 1px 3px rgba(18,18,18,.1);
 }
 
-body.night .go-up a {
-  background-color: rgb(88 88 88) !important;
-  padding: 15px 20px !important;
-  border-radius: 50% !important;
+.go-up:hover {
+  background: #ccc !important;
 }
 
-body.night .go-up a:hover {
-  background-color: rgb(123 123 123) !important;
+body.night .go-up {
+  position: fixed !important;
+  right: 12px !important;
+  bottom: 12px !important;
+  margin-bottom: 0 !important;
+  padding: 4px 8px !important;
+  border-radius: 15% !important;
+}
+
+body.night .go-up:hover {
+  background-color: #ccc !important;
 }
 
 .footer-inner #busuanzi_container_site_pv,
@@ -414,13 +425,4 @@ body.night .go-up a:hover {
 }
 .footer-inner p {
   margin: 0;
-}
-footer.main-footer .go-up a {
-  padding: 4px 8px !important;
-  border-radius: 15% !important;
-  background: rgba(44,46,47,.05) !important;
-  box-shadow: 0 1px 3px rgba(18,18,18,.1);
-}
-footer.main-footer .go-up a:hover {
-  background: #ccc !important;
 }
