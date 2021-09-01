@@ -412,9 +412,6 @@ body.night .go-up a:hover {
 .sidebar-menu .main-menu a>i{
   width: 16px;
 }
-footer.main-footer {
-  margin-bottom: -10px;
-}
 .footer-inner p {
   margin: 0;
 }
