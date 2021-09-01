@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    cursor: pointer;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #979898;
+}
+:root {
+  scrollbar-width: thin;
+}
 .sousuo{
     padding: 25px 0 35px 0;
     max-width: 717px;
