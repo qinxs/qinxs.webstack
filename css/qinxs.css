@@ -132,6 +132,7 @@ input::-webkit-input-placeholder{
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   display: none;
+  /* display: block !important; */  /* 调试此样式时 开启 */
   z-index: 999
 }
 .search-engine-head{
@@ -143,7 +144,7 @@ input::-webkit-input-placeholder{
   float: left;
   margin: 0;
   font-size: 14px;
-  color: #999;
+  color: #777;
 }
 .search-engine-tool{
   float: right;
@@ -195,6 +196,7 @@ input::-webkit-input-placeholder{
   color: #505050;
   cursor: pointer;
   padding: 0;
+  letter-spacing: .1em;
 }
 .search-engine-list li span{
   width: 25px;
@@ -453,4 +455,15 @@ body.night .go-up:hover {
 }
 .footer-inner p {
   margin: 0;
+}
+@media screen and (max-width: 768px){
+  .logo-env {
+    padding: 10px !important;
+  }
+  .mobile-menu-toggle {
+    margin-top: 12.5px;
+  }
+  .user-info-navbar .user-info-menu>li>a{
+    padding: 30px 20px !important;
+  }
 }
