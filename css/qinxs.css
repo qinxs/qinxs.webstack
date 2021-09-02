@@ -189,14 +189,19 @@ input::-webkit-input-placeholder{
 .search-engine-list li{
   float: left;
   width: 30.3%;
-  line-height: 30px;
-  font-size: 14px;
   margin: 5px 1.5%;
-  background: #f9f9f9;
+  padding: 1px 0 1px 3px;
+  border-radius: 5px;
+  line-height: 30px;
   color: #505050;
-  cursor: pointer;
-  padding: 0;
+  background: #f9f9f9;
+  font-size: 14px;
   letter-spacing: .1em;
+  cursor: pointer;
+}
+.search-engine-list li:hover {
+  color: #fff;
+  background-color: #f13434;
 }
 .search-engine-list li span{
   width: 25px;
