@@ -238,19 +238,12 @@ body.night .dropdown-menu {
 }
 
 body.night .user-info-navbar .user-info-menu>li>a {
-  border-bottom: 1px solid #232323 !important;
-  border-right: 1px solid #232323 !important;
-  border-left: 1px solid #232323 !important;
+  border: none  !important;
 }
 
 body.night .user-info-navbar .user-info-menu>li>a,
 .user-info-navbar .user-info-menu>li>a {
   height: 76px !important;
-}
-
-body.night .user-info-navbar .user-info-menu>li>a:hover {
-  border-right: 1px solid #888686 !important;
-  border-left: 1px solid #888686 !important;
 }
 
 body.night .user-info-navbar .user-info-menu>li {
@@ -462,6 +455,16 @@ body.night .go-up:hover {
   margin: 0;
 }
 @media screen and (max-width: 768px){
+  .sidebar-menu {
+    position: fixed !important;
+    z-index: 999 !important;
+  }
+  .user-info-navbar {
+    position: fixed !important;
+    z-index: 999 !important;
+    right: 30px !important;
+    left: 30px !important;
+  }
   .logo-env {
     padding: 10px !important;
   }
@@ -471,5 +474,8 @@ body.night .go-up:hover {
   }
   .user-info-navbar .user-info-menu>li>a{
     padding: 30px 20px !important;
+  }
+  .main-content {
+    top: 64px;
   }
 }
