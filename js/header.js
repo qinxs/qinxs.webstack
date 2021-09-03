@@ -228,8 +228,8 @@ function search() {
     searchData.hotStatus ? $("#hot-btn").removeClass("off") : $("#hot-btn").addClass("off");
     $(".search-engine-list li").click(function (e) {
         var index = $(this).index();
-        if (e.ctrlKey) {
-            console.log(e, searchData.data[index].url)
+        if (e.ctrlKey || e.metaKey) {
+            // console.log(e, searchData.data[index].url)
             doSearch(searchData.data[index].url)
         } else {
             searchData.thisSearchIcon = searchData.data[index].position;
