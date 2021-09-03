@@ -149,6 +149,19 @@ function search() {
             }
         })
     }
+    function doSearch(searchEngine) {
+        var textValue = $("#txt").val();
+        if (textValue) {
+            window.open(searchEngine + textValue);
+            $("#box ul").html("")
+        } else {
+            // layer.msg("请输入关键词！", {
+            //     time: 500
+            // }, function () {
+                $("#txt").focus()
+            // })
+        }
+    }
     $("#txt").keyup(function (e) {
         if ($(this).val()) {
             if (e.keyCode == 38 || e.keyCode == 40 || !searchData.hotStatus) {
@@ -213,27 +226,22 @@ function search() {
         localStorage.searchData = JSON.stringify(searchData)
     });
     searchData.hotStatus ? $("#hot-btn").removeClass("off") : $("#hot-btn").addClass("off");
-    $(".search-engine-list li").click(function () {
+    $(".search-engine-list li").click(function (e) {
         var index = $(this).index();
-        searchData.thisSearchIcon = searchData.data[index].position;
-        $(".search-icon").css("background-position", searchData.thisSearchIcon);
-        searchData.thisSearch = searchData.data[index].url;
-        $(".search-engine").css("display", "none");
-        localStorage.searchData = JSON.stringify(searchData)
+        if (e.ctrlKey) {
+            console.log(e, searchData.data[index].url)
+            doSearch(searchData.data[index].url)
+        } else {
+            searchData.thisSearchIcon = searchData.data[index].position;
+            $(".search-icon").css("background-position", searchData.thisSearchIcon);
+            searchData.thisSearch = searchData.data[index].url;
+            $(".search-engine").css("display", "none");
+            localStorage.searchData = JSON.stringify(searchData)
+        }
     });
     $(".search-icon").css("background-position", searchData.thisSearchIcon);
     $("#search-btn").click(function () {
-        var textValue = $("#txt").val();
-        if (textValue) {
-            window.open(searchData.thisSearch + textValue);
-            $("#box ul").html("")
-        } else {
-            layer.msg("请输入关键词！", {
-                time: 500
-            }, function () {
-                $("#txt").focus()
-            })
-        }
+        doSearch(searchData.thisSearch)
     })
 }
 
