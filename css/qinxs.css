@@ -19,6 +19,7 @@ body {
 
 /*Bootstrap 提示框样式*/
 div.tooltip-inner {
+  color: #979898;
   letter-spacing: .05em;
   border-radius: 4px;
   font-size: 13px;
