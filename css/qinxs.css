@@ -16,10 +16,39 @@
 body {
   user-select: none;
 }
+
+/*Bootstrap 提示框样式*/
+div.tooltip-inner {
+  letter-spacing: .05em;
+  border-radius: 4px;
+  font-size: 13px;
+  text-align: left;
+}
+
+/*折叠菜单 hover时显示文字*/
+.collapsed .main-menu>li>a>i {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.sidebar-menu.collapsed .main-menu>li>a>span:first-of-type {
+  display: -webkit-box !important;
+  padding: 0;
+  -webkit-box-orient: vertical;
+  opacity: 0;
+}
+.collapsed .main-menu>li>a:hover>i {
+  opacity: 0;
+}
+.collapsed .main-menu>li>a:hover>span:first-of-type {
+  opacity: 1;
+}
+
 .sousuo{
-    padding: 25px 0 35px 0;
-    max-width: 717px;
-    margin: 0 auto;
+  padding: 25px 0 35px 0;
+  max-width: 717px;
+  margin: 0 auto;
 }
 .search{
   position: relative;
@@ -444,6 +473,9 @@ footer.main-footer {
   margin: 0;
 }
 @media screen and (min-width: 768px){
+  .sidebar-menu.collapsed .sidebar-menu-inner {
+    position: fixed !important;
+  }
   .search-engine:after {
       content: "提示：可以按住 CTRL 直接搜索";
       padding: 0 1.5%;
