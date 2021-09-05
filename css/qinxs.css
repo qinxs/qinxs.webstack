@@ -14,6 +14,7 @@
   scrollbar-width: thin;
 }
 body {
+  font-family: "Helvetica Neue","Helvetica","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Noto Sans CJK","Source Han Sans","WenQuanYi Micro Hei","Microsoft YaHei",sans-serif !important;
   user-select: none;
 }
 
@@ -259,10 +260,6 @@ body.night .tpwidget_text_hook {
   color: #fdfdfd;
 }
 
-body.night .sidebar-menu {
-  border-right: #7f8080 1px solid;
-}
-
 body.night .user-info-navbar {
   background-color: #232323 !important;
 }
@@ -430,8 +427,11 @@ body.night .search-engine ul::before {
 body.night .search-engine-list li {
   background: #827c7c;
 }
+body.night footer a {
+  color: #ccc;
+}
 footer.main-footer {
-    padding: 18px 30px !important;
+  padding: 18px 30px !important;
 }
 .go-up{
   position: fixed !important;
