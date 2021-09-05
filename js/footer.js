@@ -38,8 +38,9 @@ $(document).ready(function () {
 
     public_vars.$mainMenu.add(public_vars.$sidebarProfile).toggleClass('mobile-is-visible');
     ps_destroy();
+    var menuHeight = $('.sidebar-menu.fixed').height()
     $("html, body").animate({
-      scrollTop: $($(this).attr("href")).offset().top - 72
+      scrollTop: $($(this).attr("href")).offset().top - 30 - (menuHeight > 768 ? 0 : menuHeight)
     }, {
       duration: 500,
       easing: "swing"
