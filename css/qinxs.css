@@ -431,6 +431,7 @@ body.night footer a {
   color: #ccc;
 }
 footer.main-footer {
+  margin-top: 80px !important;
   padding: 18px 30px !important;
 }
 .go-up{
