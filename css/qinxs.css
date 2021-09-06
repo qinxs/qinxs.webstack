@@ -15,9 +15,20 @@
 }
 body {
   font-family: "Helvetica Neue","Helvetica","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Noto Sans CJK","Source Han Sans","WenQuanYi Micro Hei","Microsoft YaHei",sans-serif !important;
+  font-size: 13px !important;
   user-select: none;
 }
-
+h4, .h4 {
+  font-size: 17px !important;
+}
+h4, .h4, h5, .h5, h6, .h6 {
+  margin-top: 9px !important;
+  margin-bottom: 9px !important;
+}
+.xe-comment a,
+footer a {
+  color: #373e4a !important;
+}
 /*Bootstrap 提示框样式*/
 div.tooltip-inner {
   color: #979898;
@@ -513,4 +524,14 @@ footer.main-footer {
   .main-content {
     top: 90px;
   }
+  div.tooltip {
+    display: none !important;
+  }
+}
+/* xenon-components.min.css */
+.xe-widget.xe-conversations {
+  position: relative;
+  background: #fff;
+  margin-bottom: 0;
+  padding: 15px;
 }
