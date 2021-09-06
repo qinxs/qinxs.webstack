@@ -27,7 +27,7 @@ h4, .h4, h5, .h5, h6, .h6 {
 }
 .xe-comment a,
 footer a {
-  color: #373e4a !important;
+  color: #373e4a;
 }
 /*Bootstrap 提示框样式*/
 div.tooltip-inner {
