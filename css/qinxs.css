@@ -529,9 +529,6 @@ footer.main-footer {
     box-shadow: none !important;
     background-color: #fffbf0 !important;
   }
-  div.tooltip {
-    display: none !important;
-  }
 }
 /* xenon-components.min.css */
 .xe-widget.xe-conversations {
