@@ -39,7 +39,7 @@ input::-webkit-input-placeholder{
 .box2:hover,
 .box2:focus {
   background-color: #fff !important;
-  box-shadow: 0 3px 18px 0 rgba(0,0,0,.2) !important;
+  box-shadow: 0 26px 40px -24px rgba(0,36,100,.3) !important;
 }
 .xe-comment .xe-user-name,
 footer a {
