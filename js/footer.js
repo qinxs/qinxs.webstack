@@ -4,10 +4,6 @@ $(document).ready(function () {
   const observer = lozad();
   observer.observe();
 
-  const notLazy = $('.not-lazy');
-  // ... trigger the load of a image before it appears on the viewport
-  observer.triggerLoad(notLazy);
-
   $(document).on('click', '.has-sub', function () {
     var _this = $(this)
     if (!$(this).hasClass('expanded')) {
